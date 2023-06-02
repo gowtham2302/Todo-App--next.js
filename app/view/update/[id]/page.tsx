@@ -19,8 +19,8 @@ export default async function View_id({params : {id}} : Params) {
       <form action={update} className="flex flex-col justify-center content-center gap-4" >
         <label htmlFor="name" className="text-3xl">Todo : </label>
         <input id="id" name="id" type="hidden" value={curr_todo?.id} />
-        <input id="name" name="todo" type="text" defaultValue={curr_todo?.todo} className="rounded-lg text-xl text-slate-900 h-12 w-80 p-4" />
-        <button type="submit" className="bg-slate-600 text-lg rounded-lg h-10">update</button>
+        <input id="name" name="todo" type="text" defaultValue={curr_todo?.title} className="rounded-lg text-xl text-slate-900 h-12 w-80 p-4" />
+        <button type="submit" className="bg-blue-500 text-lg rounded-lg h-10">update</button>
       </form>
     </main>
   );

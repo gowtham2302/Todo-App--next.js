@@ -13,7 +13,7 @@ export async function update(data : FormData) {
                 id : parseInt(id)
             },
             data : {
-                todo : todo
+                title : todo
             }
         })
 

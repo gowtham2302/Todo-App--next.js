@@ -8,7 +8,7 @@ export async function create(data : FormData) {
 
     await prisma.todo.create({
         data : {
-            todo : todo
+            title : todo
         }
     })
 

@@ -19,8 +19,8 @@ export default async function View_id({params : {id}} : Params) {
       <form action={delete_view} className="flex flex-col justify-center content-center gap-4" >
         <input id="id" name="id" type="hidden" value={curr_todo?.id} />
         <p>Are you sure want to delete this todo...</p>
-        <p className='text-lg font-bold'>{curr_todo?.todo}</p>
-        <button type="submit" className="bg-slate-600 text-lg rounded-lg h-10">delete</button>      
+        <p className='text-lg font-bold text-white'>{curr_todo?.title}</p>
+        <button type="submit" className="bg-blue-500 text-lg rounded-lg h-10">delete</button>      
     </form>
     </main>
   );

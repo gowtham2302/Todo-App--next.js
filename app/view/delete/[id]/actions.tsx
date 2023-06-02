@@ -5,7 +5,6 @@ import { redirect } from 'next/navigation';
 
 
 export async function delete_view(data : FormData) {
-    let todo = data.get('todo') as string;
     let id = data.get('id') as string;
 
     await prisma.todo.delete({
@@ -13,8 +12,6 @@ export async function delete_view(data : FormData) {
                 id : parseInt(id)
             }
         })
-
-    todo = ""
 
     redirect('/view')
 }
