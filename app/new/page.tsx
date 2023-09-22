@@ -3,23 +3,9 @@ import { create } from "./actions";
 export default async function New() {
   return (
     <>
-      <div className="flex gap-3 ml-4">
-      <a
-        href="/"
-        className="bg-gray-900 text-lg text-white w-28 h-8 flex justify-center"
-      >
-        <button type="submit">Home</button>
-      </a>
-      <a
-        href="/view"
-        className="bg-gray-900 text-lg text-white  w-28 h-8 flex justify-center"
-      >
-        <button type="submit">view</button>
-      </a>
-      </div>
     <div
       className="flex justify-center justify-items-center"
-      style={{ height: "80vh" }}
+      style={{ height: "80vh"}}
     >
       <main
         className="flex justify-center justify-items-center shadow-2xl "
